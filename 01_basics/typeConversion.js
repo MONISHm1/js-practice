@@ -23,5 +23,27 @@ let booleanConversion = Boolean(isLoggedIn)
 
 let num = 33
  let stringConvert = String(num)
- console.log(stringConvert);
- console.log(typeof(stringConvert));
+//  console.log(stringConvert);
+//  console.log(typeof(stringConvert));
+
+
+ //******************** Operator *******************//
+
+let str1 = "monish"
+let str2 = " shah"
+let str3 = str1 + str2;
+// console.log(str3);
+
+
+// console.log(1 + 2)
+// console.log("1" + 2)  
+// console.log(1 + "2")
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2") 
+
+
+console.log(true)
+console.log(+true)
+// console.log(true+)  //this cause error
+
+
