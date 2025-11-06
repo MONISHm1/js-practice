@@ -63,10 +63,10 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+// const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
-console.log(instructor);
+// console.log(instructor);
 
 // {
 //     "name": "hitesh",
@@ -74,8 +74,21 @@ console.log(instructor);
 //     "price": "free"
 // }
 
-[
-    {},
-    {},
-    {}
-]
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+
+
+const aanimal = {
+    dog : 'bark',
+    cat : 'meow',
+    cow : 'bow'
+}
+
+const {cow,cat,dog} = aanimal;
+console.log(cow)
+console.log(cat)
+console.log(dog)
