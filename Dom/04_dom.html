@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;"> 
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+function addlang (lang) {
+    const li = document.createElement('li')
+    li.innerHTML = `${lang}`
+    document.querySelector('.language').appendChild(li)
+}
+//   addlang('python')
+//   addlang('java')
+//   addlang('go')
+
+
+function optimizedAddLanguage(lang) {
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(lang))
+    document.querySelector('.language').appendChild(li)
+}
+optimizedAddLanguage("python")
+optimizedAddLanguage("c")
+optimizedAddLanguage("java")
+optimizedAddLanguage("php")
+
+//edit
+const secondLang = document.querySelector('li:nth-child(2)')
+const newli = document.createElement('li')
+newli.textContent='monish'
+secondLang.replaceWith(newli)
+
+
+//edit-first
+const firstlang = document.querySelector('li:first-child')
+// const linew = document.createElement('li')
+// linew.textContent = 'vivek'
+// firstlang.replaceWith(linew)
+
+firstlang.outerHTML = '<li>TYPESCRIPT</li>'
+
+
+//remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove();
+
+</script>
+</html>
