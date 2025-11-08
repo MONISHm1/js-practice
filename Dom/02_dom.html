@@ -20,12 +20,23 @@
   </body>
   <script>
     const parent = document.querySelector('.parent');
-    // console.log(parent.children[0].innerHTML);
+    console.log(parent.children[0].innerHTML);
 
-    for (let i = 0; i < parent.children.length; i++) {
-        console.log(parent.children[i].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
         
-    }
+    // }
     parent.children[2].style.color = "yellow";
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    //  console.log(parent.nextSibling);
+
+    const dayOne = document.querySelector('.day');
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.parentElement.innerText);
+    // console.log(dayOne.nextElementSibling);
+    // console.log(dayOne.nextSibling.innerText);
+    console.log("NODES:",parent.childNodes);
   </script>
 </html>
