@@ -16,7 +16,7 @@ const chai = {
     }
 }
 
-console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+console.log(  (chai, "name"));
 
 Object.defineProperty(chai, 'name', {
     //writable: false,
